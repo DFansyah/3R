@@ -34,4 +34,4 @@ Mengingat repositori ini mencakup berbagai bahasa pemrograman dan arsitektur, se
 
 1. Kloning repositori ini ke lingkungan lokal Anda:
    ```bash
-   git clone [https://github.com/DFansyah/3R.git](https://github.com/DFansyah/3R.git)
+   git clone https://github.com/DFansyah/3R.git
