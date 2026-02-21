@@ -21,3 +21,4 @@ Navigasikan terminal Anda ke direktori proyek ini dan instal pustaka yang dibutu
 
 ```bash
 pip install yt-dlp
+pip install curl_cffi

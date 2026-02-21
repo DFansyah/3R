@@ -22,19 +22,18 @@ def download_media(url, format_choice):
         
     out_template = os.path.join(download_dir, '%(title)s.%(ext)s')
     
-    # Konfigurasi dasar yt-dlp dengan fitur Anti-Blokir (User-Agent Spoofing)
+    # Konfigurasi dasar yt-dlp dengan fitur Anti-Blokir & Pembersih Nama File
     ydl_opts = {
         'outtmpl': out_template,
         'quiet': False,
         'nocheckcertificate': True,
         'geo_bypass': True, 
-        # Menyamar sebagai browser Chrome di Windows agar tidak diblokir TikTok/IG
+        'restrictfilenames': True, # Mencegah error Errno 22 akibat emoji/karakter aneh di SD Card Android
         'http_headers': {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
             'Accept-Language': 'en-US,en;q=0.5',
         },
-        # Gunakan API alternatif untuk TikTok jika web scraping gagal
         'extractor_args': {
             'tiktok': {'api_hostname': 'api16-normal-c-useast1a.tiktokv.com'}
         }
