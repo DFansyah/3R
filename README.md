@@ -25,7 +25,7 @@ Pengembangan dilakukan menggunakan berbagai teknologi yang disesuaikan dengan ar
 Setiap iterasi proyek diisolasi dalam direktorinya masing-masing berdasarkan hari pengerjaan untuk memudahkan navigasi.
 
 - [x] **Day 01:** [Multi-Platform YouTube & Spotify Audio Downloader](./Day1)
-- [ ] **Day 02:** *[TBA - Menunggu Pembaruan]*
+- [x] **Day 02:** [Multi-Platform Sosmed Video/Audio Downloader](./Day2)
 - [ ] **Day 03:** *[TBA - Menunggu Pembaruan]*
 *(Daftar ini akan diperbarui secara berkala seiring berjalannya progres)*
 
