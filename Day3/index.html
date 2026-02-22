@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upscaler & Enhancer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="header">
+                <h1>Enhancer</h1>
+                <p>Local Image Upscaler</p>
+            </div>
+
+            <div class="control-group">
+                <label for="upload" class="btn-upload">📂 Pilih Gambar</label>
+                <input type="file" id="upload" accept="image/png, image/jpeg, image/webp">
+            </div>
+
+            <div class="control-group">
+                <label>Skala Upscale:</label>
+                <select id="scale-factor">
+                    <option value="1">1x (Ukuran Asli)</option>
+                    <option value="2" selected>2x (High Res)</option>
+                    <option value="4">4x (Ultra Res)</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>Kecerahan (Brightness): <span id="bright-val">100%</span></label>
+                <input type="range" id="brightness" min="50" max="150" value="100">
+            </div>
+
+            <div class="control-group">
+                <label>Kontras (Contrast): <span id="contrast-val">100%</span></label>
+                <input type="range" id="contrast" min="50" max="150" value="100">
+            </div>
+
+            <div class="control-group">
+                <label>Saturasi (Saturation): <span id="sat-val">100%</span></label>
+                <input type="range" id="saturation" min="0" max="200" value="100">
+            </div>
+
+            <button id="download-btn" class="btn-download" disabled>💾 Unduh Hasil</button>
+        </aside>
+
+        <main class="preview-area">
+            <div class="canvas-container">
+                <p id="placeholder-text">Pratinjau gambar akan muncul di sini</p>
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="info-bar" id="info-bar" style="display: none;">
+                <span id="original-size">Asli: 0 x 0</span>
+                <span>➡️</span>
+                <span id="new-size">Hasil: 0 x 0</span>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
