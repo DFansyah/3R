@@ -26,7 +26,8 @@ Setiap iterasi proyek diisolasi dalam direktorinya masing-masing berdasarkan har
 
 - [x] **Day 01:** [Multi-Platform YouTube & Spotify Audio Downloader](./Day1)
 - [x] **Day 02:** [Multi-Platform Sosmed Video/Audio Downloader](./Day2)
-- [ ] **Day 03:** *[TBA - Menunggu Pembaruan]*
+- [x] **Day 03:** [Simple Web For IMG Upscaler/Enhancer](./Day3)
+
 *(Daftar ini akan diperbarui secara berkala seiring berjalannya progres)*
 
 ## Panduan Penggunaan
