@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1e1e2e;
+    border: 1px solid #333;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.header h1 {
+    color: #bb86fc;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+.upload-area {
+    border: 2px dashed #555;
+    border-radius: 12px;
+    padding: 40px 20px;
+    background-color: #2a2a35;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.upload-area.dragover {
+    border-color: #bb86fc;
+    background-color: rgba(187, 134, 252, 0.1);
+}
+
+.upload-area p {
+    margin-bottom: 15px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.btn-upload {
+    background-color: #bb86fc;
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn-upload:hover {
+    background-color: #d7bcfd;
+}
+
+.preview-container {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#image-preview {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #bb86fc;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.result-area {
+    text-align: left;
+}
+
+.result-area label {
+    font-size: 13px;
+    color: #ccc;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #121212;
+    color: #fff;
+    outline: none;
+}
+
+button#copy-btn {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button#copy-btn:hover {
+    background-color: #444;
+}

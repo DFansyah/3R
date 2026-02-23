@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMG to URL Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>☁️ IMG to URL</h1>
+                <p>Upload gambar lokal dan dapatkan tautan publik.</p>
+            </div>
+
+            <div class="upload-area" id="drop-zone">
+                <p>Seret & Lepas Gambar di sini<br>atau</p>
+                <label for="file-upload" class="btn-upload">Pilih Gambar</label>
+                <input type="file" id="file-upload" accept="image/png, image/jpeg, image/gif, image/webp">
+            </div>
+
+            <div class="preview-container" id="preview-container" style="display: none;">
+                <img id="image-preview" src="" alt="Pratinjau">
+                <div class="loading" id="loading-indicator" style="display: none;">
+                    ⏳ Sedang mengunggah...
+                </div>
+            </div>
+
+            <div class="result-area" id="result-area" style="display: none;">
+                <label>Tautan URL Publik:</label>
+                <div class="input-group">
+                    <input type="text" id="url-result" readonly>
+                    <button id="copy-btn">📋 Salin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
