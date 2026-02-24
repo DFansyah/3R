@@ -28,6 +28,7 @@ Setiap iterasi proyek diisolasi dalam direktorinya masing-masing berdasarkan har
 - [x] **Day 02:** [Multi-Platform Sosmed Video/Audio Downloader](./Day2)
 - [x] **Day 03:** [Simple Web For IMG Upscaler/Enhancer](./Day3)
 - [x] **Day 04:** [Web IMG To URL With ImgBB API](./Day4)
+- [x] **Day 05:** [Link/Teks to QR converter](./Day5)
 
 *(Daftar ini akan diperbarui secara berkala seiring berjalannya progres)*
 

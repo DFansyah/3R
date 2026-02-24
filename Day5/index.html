@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/easyqrcodejs/dist/easy.qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="header">
+                <h1>QR Generator</h1>
+                <p>Buat QR Code Kustom Anda</p>
+            </div>
+
+            <div class="control-group">
+                <label>Tautan / Teks:</label>
+                <input type="text" id="qr-text" placeholder="Masukkan URL atau teks di sini..." value="https://github.com">
+            </div>
+
+            <div class="color-controls-wrapper">
+                <div class="control-group">
+                    <label>Warna QR (Depan):</label>
+                    <div class="color-input-group">
+                        <input type="color" id="color-dark" value="#000000">
+                        <input type="text" id="color-dark-text" value="#000000" placeholder="HEX / RGB">
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                    <label>Warna Latar (Belakang):</label>
+                    <div class="color-input-group">
+                        <input type="color" id="color-light" value="#ffffff">
+                        <input type="text" id="color-light-text" value="#ffffff" placeholder="HEX / RGB">
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label>Logo (Opsional):</label>
+                <label for="logo-upload" class="btn-upload">📂 Pilih Logo</label>
+                <input type="file" id="logo-upload" accept="image/png, image/jpeg, image/webp">
+                <small id="logo-name" style="color: #888; margin-top: 5px; font-size: 12px;"></small>
+            </div>
+
+            <button id="generate-btn" class="btn-primary">⚡ Buat QR Code</button>
+        </aside>
+
+        <main class="preview-area">
+            <div class="qr-container">
+                <div id="qrcode"></div>
+                <p id="placeholder-text">QR Code akan muncul di sini</p>
+            </div>
+            
+            <button id="download-btn" class="btn-download" disabled>💾 Unduh QR Code</button>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
