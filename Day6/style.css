@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #1e1e2e;
+    border: 1px solid #333;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.header h1 {
+    color: #bb86fc;
+    font-size: 28px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.header p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+@media (min-width: 480px) {
+    .input-container {
+        flex-direction: row;
+    }
+}
+
+input[type="url"], input[type="text"] {
+    flex: 1;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #121212;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+    transition: border 0.3s;
+}
+
+input[type="url"]:focus {
+    border-color: #bb86fc;
+}
+
+button {
+    padding: 14px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #bb86fc;
+    color: #121212;
+    white-space: nowrap;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background-color: #d7bcfd;
+}
+
+.btn-primary:disabled {
+    background-color: #555;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.loading {
+    text-align: center;
+    margin-top: 15px;
+    color: #bb86fc;
+    font-size: 14px;
+}
+
+.result-area {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px dashed #444;
+}
+
+.result-area label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.result-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-copy {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+.btn-copy:hover {
+    background-color: #444;
+}
+
+/* RIWAYAT (HISTORY LIST) */
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.history-header h2 {
+    font-size: 18px;
+    color: #e0e0e0;
+}
+
+.history-desc {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.btn-danger {
+    background-color: transparent;
+    color: #cf6679;
+    border: 1px solid #cf6679;
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.btn-danger:hover {
+    background-color: rgba(207, 102, 121, 0.1);
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.history-list::-webkit-scrollbar { width: 6px; }
+.history-list::-webkit-scrollbar-thumb { background: #444; border-radius: 10px; }
+
+.history-item {
+    background-color: #2a2a35;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #bb86fc;
+}
+
+.history-info {
+    flex: 1;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.history-info .short-link {
+    color: #bb86fc;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.history-info .original-link {
+    color: #888;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.history-date {
+    font-size: 11px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.btn-sm-copy {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.btn-sm-copy:hover {
+    background-color: #444;
+}
+
+.empty-state {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    padding: 20px 0;
+}

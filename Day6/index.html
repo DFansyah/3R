@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Shortener Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <main class="card main-card">
+            <div class="header">
+                <h1>🔗 URL Shortener</h1>
+                <p>Perpendek tautan panjang Anda secara instan.</p>
+            </div>
+
+            <div class="input-container">
+                <input type="url" id="long-url" placeholder="https://contoh-tautan-yang-sangat-panjang.com/..." required>
+                <button id="shorten-btn" class="btn-primary">Perpendek!</button>
+            </div>
+
+            <div id="loading" class="loading" style="display: none;">
+                ⏳ Memproses tautan...
+            </div>
+
+            <div id="result-area" class="result-area" style="display: none;">
+                <label>Tautan Pendek Anda:</label>
+                <div class="result-group">
+                    <input type="text" id="short-url" readonly>
+                    <button id="copy-btn" class="btn-copy">📋 Salin</button>
+                </div>
+            </div>
+        </main>
+
+        <aside class="card history-card">
+            <div class="history-header">
+                <h2>📊 Riwayat Tautan Lokal</h2>
+                <button id="clear-history-btn" class="btn-danger">Hapus Riwayat</button>
+            </div>
+            <p class="history-desc">Tautan yang dipendekkan akan tersimpan di peramban ini tanpa batas.</p>
+            
+            <div id="history-list" class="history-list">
+                </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
