@@ -29,6 +29,7 @@ Setiap iterasi proyek diisolasi dalam direktorinya masing-masing berdasarkan har
 - [x] **Day 03:** [Simple Web For IMG Upscaler/Enhancer](./Day3)
 - [x] **Day 04:** [Web IMG To URL With ImgBB API](./Day4)
 - [x] **Day 05:** [Link/Teks to QR converter](./Day5)
+- [x] **Day 06:** [URL Shortener With tinyurl API](./Day6)
 
 *(Daftar ini akan diperbarui secara berkala seiring berjalannya progres)*
 
