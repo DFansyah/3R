@@ -30,6 +30,7 @@ Setiap iterasi proyek diisolasi dalam direktorinya masing-masing berdasarkan har
 - [x] **Day 04:** [Web IMG To URL With ImgBB API](./Day4)
 - [x] **Day 05:** [Link/Teks to QR converter](./Day5)
 - [x] **Day 06:** [URL Shortener With tinyurl API](./Day6)
+- [x] **Day 07:** [Markdown live viewer/exporter to PDF](./Day7)
 
 *(Daftar ini akan diperbarui secara berkala seiring berjalannya progres)*
 

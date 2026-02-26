@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Markdown Editor & Converter</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="toolbar">
+            <div class="logo">
+                <h1>📝 MD Converter</h1>
+                <p>Day 07</p>
+            </div>
+            <div class="actions">
+                <button id="btn-html" class="btn btn-secondary">💾 Unduh HTML</button>
+                <button id="btn-pdf" class="btn btn-primary">📄 Ekspor PDF</button>
+            </div>
+        </header>
+
+        <main class="editor-container">
+            <div class="pane input-pane">
+                <div class="pane-header">Markdown Source</div>
+                <textarea id="editor" spellcheck="false" placeholder="Ketik Markdown Anda di sini..."></textarea>
+            </div>
+
+            <div class="pane preview-pane">
+                <div class="pane-header">Live Preview</div>
+                <div id="preview-wrapper">
+                    <div id="preview" class="markdown-body"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
